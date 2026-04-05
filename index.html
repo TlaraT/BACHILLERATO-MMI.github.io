@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachillerato MMI - Oficial</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #fcfcfc; }
+        .container { width: 90%; max-width: 1100px; margin: auto; }
+        
+        /* Header Estilo MMI */
+        header { background: white; padding: 15px 0; border-bottom: 4px solid #004494; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        nav a { margin-left: 20px; text-decoration: none; color: #004494; font-weight: 600; font-size: 14px; text-transform: uppercase; }
+
+        /* Banner Principal (Hero) */
+        .hero { display: flex; background: linear-gradient(135deg, #ffffff 0%, #eef6ff 100%); padding: 60px 40px; align-items: center; border-radius: 0 0 40px 40px; margin-bottom: 40px; }
+        .hero-info { flex: 1; padding-right: 20px; }
+        .hero-info h1 { font-size: 45px; color: #004494; line-height: 1.1; margin-bottom: 20px; }
+        .hero-info span { color: #ff9900; }
+        .hero-image { flex: 1; text-align: right; }
+        .hero-image img { width: 100%; max-width: 550px; border-radius: 25px; box-shadow: 15px 15px 0px #ff9900; border: 5px solid white; }
+
+        /* Cuadrícula de Misión/Valores */
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .info-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; border-top: 5px solid #004494; }
+        .info-card h3 { color: #004494; margin-top: 0; }
+
+        /* Galería de Fotos del Bachillerato */
+        h2 { text-align: center; color: #004494; font-size: 32px; margin-bottom: 30px; }
+        .mmi-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; padding-bottom: 60px; }
+        .mmi-item { position: relative; overflow: hidden; border-radius: 15px; height: 250px; border: 3px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .mmi-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .mmi-item:hover img { transform: scale(1.1); }
+        .mmi-label { position: absolute; bottom: 0; background: rgba(0, 68, 148, 0.8); color: white; width: 100%; padding: 10px; text-align: center; font-size: 14px; font-weight: bold; }
+
+        footer { background: #004494; color: white; text-align: center; padding: 50px 20px; margin-top: 20px; }
+        .btn-admision { background: #ff9900; color: white; border: none; padding: 15px 35px; border-radius: 50px; font-weight: bold; cursor: pointer; font-size: 16px; transition: 0.3s; }
+        .btn-admision:hover { background: #e68a00; transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="logo.jpeg" alt="Logo Bachillerato MMI" style="height: 80px;">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Galería</a>
+            <a href="#" style="background:#004494; color:white; padding:8px 15px; border-radius:5px;">Portal Estudiantes</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-info">
+            <h1>Formamos estudiantes para transformar el <span>futuro</span></h1>
+            <p>En el <strong>Bachillerato Integral MMI</strong> impulsamos el desarrollo académico, personal y social guiados por valores de excelencia.</p>
+            <br>
+            <button class="btn-admision">Proceso de Admisión 2026</button>
+        </div>
+        <div class="hero-image">
+            <img src="alumnos3.png.png" alt="Estudiantes MMI">
+        </div>
+    </section>
+
+    <section class="info-grid">
+        <div class="info-card">
+            <h3>Nuestra Misión</h3>
+            <p>Formar integralmente a nuestros estudiantes desarrollando sus capacidades académicas y éticas.</p>
+        </div>
+        <div class="info-card" style="border-top-color: #ff9900;">
+            <h3>Nuestros Valores</h3>
+            <p>Respeto, Responsabilidad, Honestidad, Solidaridad, Disciplina y Excelencia.</p>
+        </div>
+        <div class="info-card">
+            <h3>Oferta Académica</h3>
+            <p>Plan de estudios con enfoque en competencias y preparación para la universidad.</p>
+        </div>
+    </section>
+
+    <h2>Vida Estudiantil en MMI</h2>
+    <div class="mmi-gallery">
+        <div class="mmi-item"><img src="escuela.png.png" alt="Plantel"><div class="mmi-label">NUESTRO PLANTEL</div></div>
+        <div class="mmi-item"><img src="clase.png.png" alt="Clases"><div class="mmi-label">EXCELENCIA ACADÉMICA</div></div>
+        <div class="mmi-item"><img src="deporte.png.png" alt="Deportes"><div class="mmi-label">DEPORTES</div></div>
+        <div class="mmi-item"><img src="arte.png.png" alt="Arte"><div class="mmi-label">TALLERES DE ARTE</div></div>
+        <div class="mmi-item"><img src="comedor.png.png" alt="Comedor"><div class="mmi-label">CAFETERÍA</div></div>
+        <div class="mmi-item"><img src="maestro.png.png" alt="Docentes"><div class="mmi-label">DOCENTES CALIFICADOS</div></div>
+        <div class="mmi-item"><img src="alumnos.png.png" alt="Comunidad"><div class="mmi-label">COMUNIDAD MMI</div></div>
+        <div class="mmi-item"><img src="alumnos2.png.png" alt="Amistad"><div class="mmi-label">TRABAJO EN EQUIPO</div></div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <h3>BACHILLERATO MMI</h3>
+        <p>Formación • Valores • Futuro</p>
+        <p>📍 El Conchal, Riviera Veracruzana, Alvarado.</p>
+        <p>📞 +52 229 127 5241</p>
+        <hr style="opacity: 0.2; margin: 20px 0;">
+        <p style="font-size: 12px; opacity: 0.7;">© 2026 Bachillerato MMI. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
